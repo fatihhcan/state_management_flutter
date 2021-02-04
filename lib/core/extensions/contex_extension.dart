@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 extension ContextExtension on BuildContext {
@@ -31,21 +29,19 @@ extension PaddingExtensionAll on BuildContext {
 
 extension PaddingExtensionSymetric on BuildContext {
   EdgeInsets get paddingLowVertical => EdgeInsets.symmetric(vertical: lowValue);
-  EdgeInsets get paddingNormalVertical => EdgeInsets.symmetric(vertical: normalValue);
-  EdgeInsets get paddingMediumVertical => EdgeInsets.symmetric(vertical: mediumValue);
-  EdgeInsets get paddingHighVertical => EdgeInsets.symmetric(vertical: highValue);
+  EdgeInsets get paddingNormalVertical =>
+      EdgeInsets.symmetric(vertical: normalValue);
+  EdgeInsets get paddingMediumVertical =>
+      EdgeInsets.symmetric(vertical: mediumValue);
+  EdgeInsets get paddingHighVertical =>
+      EdgeInsets.symmetric(vertical: highValue);
 
-  EdgeInsets get paddingLowHorizontal => EdgeInsets.symmetric(horizontal: lowValue);
-  EdgeInsets get paddingNormalHorizontal => EdgeInsets.symmetric(horizontal: normalValue);
-  EdgeInsets get paddingMediumHorizontal => EdgeInsets.symmetric(horizontal: mediumValue);
-  EdgeInsets get paddingHighHorizontal => EdgeInsets.symmetric(horizontal: highValue);
-}
-
-extension PageExtension on BuildContext {
-  Color get randomColor => Colors.primaries[Random().nextInt(17)];
-}
-
-extension DurationExtension on BuildContext {
-  Duration get lowDuration => Duration(milliseconds: 500);
-  Duration get normalDuration => Duration(seconds: 1);
+  EdgeInsets get paddingLowHorizontal =>
+      EdgeInsets.symmetric(horizontal: lowValue);
+  EdgeInsets get paddingNormalHorizontal =>
+      EdgeInsets.symmetric(horizontal: normalValue);
+  EdgeInsets get paddingMediumHorizontal =>
+      EdgeInsets.symmetric(horizontal: mediumValue);
+  EdgeInsets get paddingHighHorizontal =>
+      EdgeInsets.symmetric(horizontal: highValue);
 }
